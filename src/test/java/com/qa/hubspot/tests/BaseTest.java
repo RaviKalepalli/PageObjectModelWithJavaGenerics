@@ -24,7 +24,7 @@ public class BaseTest {
 		driver.get("https://app.hubspot.com/login");
 		try {
 			Thread.sleep(6000);
-		} catch (InterruptedException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
