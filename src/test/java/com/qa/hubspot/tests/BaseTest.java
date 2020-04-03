@@ -17,9 +17,7 @@ public class BaseTest {
 	@BeforeMethod
 	public void setUp() {
 		
-		for(int i=0 ; i>2 ;i++){
-		System.out.println();
-		}
+		
 		System.setProperty("webdriver.chrome.driver", "/Users/NaveenKhunteta/Downloads/chromedriver");
 		driver = new ChromeDriver();
 		
