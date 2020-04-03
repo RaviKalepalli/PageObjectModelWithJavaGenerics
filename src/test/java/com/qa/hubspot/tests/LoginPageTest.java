@@ -10,6 +10,9 @@ public class LoginPageTest extends BaseTest{
 	
 	@Test(priority=1)
 	public void verifyLoginPageTitleTest(){
+		for(int i=0 ; i>2 ;i++){
+		System.out.println();
+		}
 		String title = page.getInstance(LoginPage.class).getLoginPageTitle();
 		System.out.println("login page title is: "+ title);
 		Assert.assertEquals(title, "HubSpot Login");
