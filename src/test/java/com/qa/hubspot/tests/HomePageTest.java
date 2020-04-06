@@ -13,6 +13,7 @@ public class HomePageTest extends BaseTest{
 		page.getInstance(LoginPage.class).doLogin("naveenanimation20@gmail.com", "Test@1234");
 		String title = page.getInstance(HomePage.class).getHomePageTitle();
 		System.out.println("home page title is: " + title);
+		System.out.println("home page title: " + title);
 		Assert.assertEquals(title, "Reports dashboard");
 	}
 	
