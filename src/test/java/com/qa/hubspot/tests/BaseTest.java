@@ -16,9 +16,11 @@ public class BaseTest {
 
 	@BeforeMethod
 	public void setUp() {
-		for(int i = 10 ; i < 5 ;i++){
-			System.out.println("Not reachable code");
-		}
+		String ip = "192.168.12.42"; // Noncompliant
+		Socket socket = new Socket(ip, 6667);
+
+		String uname = "admin";
+ 		String password = "admin123";
 		
 		
 		System.setProperty("webdriver.chrome.driver", "/Users/NaveenKhunteta/Downloads/chromedriver");
