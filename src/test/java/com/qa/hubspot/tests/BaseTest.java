@@ -16,6 +16,9 @@ public class BaseTest {
 
 	@BeforeMethod
 	public void setUp() {
+		for(int i = 10 ; i < 5 ;i++){
+			System.out.println("Not reachable code");
+		}
 		
 		
 		System.setProperty("webdriver.chrome.driver", "/Users/NaveenKhunteta/Downloads/chromedriver");
